@@ -7,7 +7,7 @@ echo Sending to path $3
 
 DPI=$2
 DESTPATH=$3
-FILEARRAY=( $(find $1/* ) )
+FILEARRAY=( $(find $1/* -name '*.svg' ) )
 TOTAL="${#FILEARRAY[@]}"
 
 mkdir $3
