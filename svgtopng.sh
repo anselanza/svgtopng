@@ -19,9 +19,8 @@ do
 	s=${var##*/}
 	base=${s%.svg}
 	echo 'converting' $var ' to ' $DESTPATH/$base.png
-	# inkscape -f $var -d=$DPI -e $DESTPATH/$base.png
+	inkscape -f $var -d=$DPI -e $DESTPATH/$base.png
 	let COUNT=COUNT+1
-	# PERCENTAGE="$[COUNT/TOTAL*100]" | bc
 	echo $(tput setaf 2)Completed $COUNT of $TOTAL$(tput sgr 0)
 	echo '*****'
 done
