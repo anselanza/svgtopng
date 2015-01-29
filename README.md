@@ -8,3 +8,6 @@ Example:
 ```
 ./svgconvert ~/Desktop/my_svg_sequence 180 ~/Desktop/png-sequence
 ```
+
+## Required dependencies
+You must install Inkscape first. On Linux, `apt-get install inkscape` and on Mac OS X I'd recommend `brew install inkscape`
